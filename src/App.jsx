@@ -1,12 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import Header from "./components/Header/Header.jsx"
+import Footer from "./components/Footer/Footer.jsx"
+import Profile from "./components/Profile/Profile.jsx"
+import Cards from "./components/Cards/Cards.jsx"
+import Card from "./components/Card/Card.jsx"
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <h1>Hola</h1>
+<div className="page">
+  <Header />
+  <Profile />
+  <Cards />
+  <Footer />
+</div>
+
+
     </>
   )
 }
