@@ -1,15 +1,7 @@
-import CloseButton from "../../../assets/images/x.svg"
-
 export default function NewCard() {
   return (
     <form className="form popup__form" id="form-cards">
-          <img
-            className="popup__close"
-            src={CloseButton}
-            alt="botón de cerrado"
-            id="popup-close-card"
-          />
-          <h2 className="form__title">Agregar Lugar</h2>
+         
           <input
             type="text"
             name="title"
