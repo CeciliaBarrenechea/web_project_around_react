@@ -6,6 +6,7 @@ import Card from "./components/Card/Card.jsx";
 import { useState } from "react";
 import NewCard from "./components/Main/NewCard/NewCard.jsx";
 import Popup from "./components/Main/Popup/Popup.jsx";
+import ImagePopup from "./components/ImagePopup/ImagePopup.jsx";
 
 function App() {
   const [popup, setPopup] = useState(null);
@@ -22,7 +23,7 @@ function App() {
     <>
       <div className="page">
         {popup && (
-          <Popup onClose={handleClosePopup} title={popup.title}>
+          <Popup onClose={handleClosePopup} title={popup.title} isImage={popup.isImage}>
             {popup.children}
           </Popup>
         )}
@@ -32,7 +33,15 @@ function App() {
             handleOpenPopup(newPopup);
           }}
         />
-        <Cards />
+        <Cards
+          onCardClick={(card) => {
+            handleOpenPopup({
+              title: "",
+              isImage: true,
+              children: <ImagePopup card={card} onClose={handleClosePopup} />,
+            });
+          }}
+        />
         <Footer />
       </div>
     </>

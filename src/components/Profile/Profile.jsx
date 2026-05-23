@@ -16,7 +16,6 @@ const Profile = (props) => {
     children: <EditAvatar />,
   };
 
-
   return (
     <div className="profile">
       <div className="profile__left">
@@ -28,7 +27,7 @@ const Profile = (props) => {
               console.log("click");
               props.handleOpenPopup(editAvatarPopup);
             }}
-                >
+          >
             &#x270E;
           </button>
           <img
@@ -45,9 +44,9 @@ const Profile = (props) => {
               src={ProfileButton}
               alt="Botón para editar"
               onClick={() => {
-              console.log("click");
-              props.handleOpenPopup(editProfilePopup);
-            }}
+                console.log("click");
+                props.handleOpenPopup(editProfilePopup);
+              }}
             />
           </div>
           <p className="profile__paragraph"></p>

@@ -15,6 +15,7 @@
 .popup__container {
   position: relative;
 }
+
 .popup__image-title {
   color: #fff;
   font-family: Inter;
@@ -57,6 +58,11 @@
   box-sizing: border-box;
 
   position: relative;
+}
+
+.popup__content_image{
+  background-color: transparent;
+  color: #fff;
 }
 
 .popup__title {

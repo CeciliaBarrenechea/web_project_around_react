@@ -1,12 +1,12 @@
-import Popup from "../Popup/Popup";
+import Popup from "../Main/Popup/Popup";
 
 export default function ImagePopup(props) {
   const { card, onClose } = props;
 
   return (
-    <Popup onClose={onClose}>
+    <>
       <img
-        className="popup__image"
+        className="popup__image popup__image-src"
         src={card?.link}
         alt={card?.name}
       />
@@ -14,6 +14,6 @@ export default function ImagePopup(props) {
       <p className="popup__caption">
         {card?.name}
       </p>
-    </Popup>
+    </>
   );
 }
