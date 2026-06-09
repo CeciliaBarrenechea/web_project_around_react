@@ -1,4 +1,4 @@
-import Popup from "../Main/Popup/Popup";
+import Popup from "../Popup.jsx";
 
 export default function ImagePopup(props) {
   const { card, onClose } = props;

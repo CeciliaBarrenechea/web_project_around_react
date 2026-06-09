@@ -1,13 +1,13 @@
-import Header from "./components/Header/Header.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import Main from "./components/Main/Main.jsx";
-import Card from "./components/Card/Card.jsx";
+import Header from "./Header/Header.jsx";
+import Footer from "./Footer/Footer.jsx";
+import Main from "./Main/Main.jsx";
+import Card from "./Main/components/Card/Card.jsx";
 import { useState, useEffect } from "react";
-import NewCard from "./components/Main/NewCard/NewCard.jsx";
-import Popup from "./components/Main/Popup/Popup.jsx";
-import ImagePopup from "./components/ImagePopup/ImagePopup.jsx";
-import { CurrentUserContext } from "./contexts/CurrentUserContext";
-import { api } from "./utils/api.js";
+import NewCard from "./Main/components/Popup/NewCard/NewCard.jsx";
+import Popup from "./Main/components/Popup/Popup.jsx";
+import ImagePopup from "./Main/components/Popup/ImagePopup/ImagePopup.jsx"
+import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
+import { api } from "../utils/api.js";
 
 
 function App() {

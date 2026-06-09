@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
 import ProfileButton from "../../assets/images/edit_button_img.svg";
-import NewCard from "../Main/NewCard/NewCard";
-import Popup from "../Main/Popup/Popup";
-import EditProfile from "../Main/EditProfile/EditProfile";
-import EditAvatar from "../Main/EditAvatar/EditAvatar";
-import { CurrentUserContext } from "../../contexts/CurrentUserContext";
+import NewCard from "../Main/components/Popup/NewCard/NewCard.jsx";
+import Popup from "../Main/components/Popup/Popup.jsx";
+import EditProfile from "../Main/components/Popup/EditAvatar/EditAvatar.jsx";
+import EditAvatar from "../Main/components/Popup/EditAvatar/EditAvatar.jsx"
+import { CurrentUserContext } from "../../contexts/CurrentUserContext.js";
 
 const Profile = (props) => {
   const {currentUser} = useContext(CurrentUserContext);

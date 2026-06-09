@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Card from "../Card/Card";
+import Card from "./components/Card/Card";
 import { api } from "../../utils/api";
 import { useEffect, useContext } from "react";
 import { CurrentUserContext } from "../../contexts/CurrentUserContext";
 import Profile from "../Profile/Profile";
-import Popup from "./Popup/Popup";
-import NewCard from "./NewCard/NewCard";
-import EditProfile from "./EditProfile/EditProfile";
-import EditAvatar from "./EditAvatar/EditAvatar";
-import ImagePopup from "../ImagePopup/ImagePopup";
+import Popup from "./components/Popup/Popup.jsx";
+import NewCard from "./components/Popup/NewCard/NewCard.jsx";
+import EditProfile from "./components/Popup/EditProfile/EditProfile.jsx";
+import EditAvatar from "./components/Popup/EditAvatar/EditAvatar.jsx"
+import ImagePopup from "./components/Popup/ImagePopup/ImagePopup.jsx";
 
 const Main = (props) => {
   const { handleClosePopup, handleOpenPopup, cards, onCardLike, onCardDelete } = props;
